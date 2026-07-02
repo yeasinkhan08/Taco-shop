@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/contact.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <section>
+  <h2>Our Contact Information</h2>
+
+  <p><strong>Phone:</strong> +880 1234 567890</p>
+
+  <p>
+    <strong>Email us at:</strong>
+  
+  <a href="mailto:tacoshop@email.com">tacoshop@email.com</a>
+
+  </p>
+
+  <p>
+    <strong>Address:</strong>
+    123 Taco Street, Dhaka, Bangladesh
+  </p>
+
+  <p>
+  Find us on Google Maps:
+  <a href="https://www.google.com/maps/%20%20%20%20place/University+Gate/@23.8879864,%20%20%20%2090.3900552,21z/data=!4m6!3m5!1s0x3%20%20%20%20755c51ffd1034bd:0x2640b1f95f0d817d!8%20%20%20%20m2!3d23.8879864!4d90.390192!16s%2Fg%2%20%20%20%20F11vx4m_g22?entry=ttu&amp;g_ep=EgoyMDI2MDY%20%20%20%20yOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+    View Location
+  </a>
+</p>
+
+</section>
+
+<section>
+  <h2>Send Us a Message</h2>
+  <form>
+    <p>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required="" placeholder="Type your Name here...">
+    </p>
+
+    <p>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required="" placeholder="Type your Email here...">
+    </p>
+
+    <p>
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" rows="6" cols="40" placeholder="Type your message here..."></textarea>
+    </p>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<section>
+  <h2>Frequently Asked Questions......</h2>
+
+  <h3>1.Do you offer delivery?</h3>
+  <p>Ans: Yes, we deliver within selected areas.</p>
+
+  <h3>2.Do you cater events?</h3>
+  <p>Ans: Yes, contact us for catering services.</p>
+</section>
+<footer>
+  <hr>
+  <p>Copyright © Taco Shop</p>
+</footer>
+<form action="mailto:tacoshop@email.com" method="post"></form>
+
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
